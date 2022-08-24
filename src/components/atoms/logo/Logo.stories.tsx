@@ -1,13 +1,26 @@
 import * as React from "react";
-import { Meta, Story } from "@storybook/react";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import atomsTitles from "../../atoms";
 import Logo from "./Logo";
 
 export default {
   component: Logo,
-} as Meta;
+  title: `${atomsTitles.logo}`,
+  argTypes: {
+    className: {
+      control: "text",
+    },
+    styles: {
+      width: {
+        control: { type: "range", min: 1, max: 30, step: 3 },
+      },
+      height: {
+        control: "text",
+      },
+    },
+  },
+} as ComponentMeta<typeof Logo>;
 
-export const Primary: Story = (args) => <Logo {...args} />;
-Primary.args = {
-  className: "main-logo",
-  styles: { width: "80px", height: "auto" },
-};
+const Template: ComponentStory<typeof Logo> = (args: any) => <Logo {...args} />;
+
+export const Primary = Template.bind({});
