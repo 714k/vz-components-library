@@ -2,10 +2,12 @@ import Logo from "./logo";
 import ShareLink from "./share-link";
 import TitleSection from "./title-section";
 import TitleSubsection from "./title-subsection";
+import Breadcrumb from "./breadcrumb";
 
 const components = "Atoms";
 
 const atomsTitles = {
+  breadcrumb: `${components}/${Breadcrumb.displayName}`,
   logo: `${components}/${Logo.displayName}`,
   sharedLink: `${components}/${ShareLink.displayName}`,
   titleSection: `${components}/${TitleSection.displayName}`,
