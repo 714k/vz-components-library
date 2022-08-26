@@ -12,11 +12,11 @@ const Template: ComponentStory<typeof ShareLink> = (args: any) => (
   <ShareLink {...args} />
 );
 
-export const Primary = Template.bind({});
+export const Facebook = Template.bind({});
 
-Primary.args = {
+Facebook.args = {
   href: "#",
   className: "share-link",
-  text: "Share",
+  text: "Facebook",
   showBullet: false,
 };
