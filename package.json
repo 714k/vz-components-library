@@ -8,10 +8,6 @@
   "files": [
     "build"
   ],
-  "exports": {
-    "./Icons": "./build/cjs/atoms/icons/index.ts",
-    "./Logo": "./build/esm/atoms/logo/index.ts"
-  },
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
@@ -38,12 +34,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build:webpack": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sb": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
-    "build:package": "rollup -c"
+    "build": "rollup -c"
   },
   "eslintConfig": {
     "extends": [
