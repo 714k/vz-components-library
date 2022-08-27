@@ -26,5 +26,11 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx"
-  ]
+  ],
+  "paths": {
+    "@victorzamudio/icons": [
+      "./src/atoms/icons"
+    ],
+    "@victorzamudio/icons/*": ["./src/atoms/icons/*"]
+  }
 }
