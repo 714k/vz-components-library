@@ -11,3 +11,7 @@ export {
   molecules,
   organisms
 }
+
+export { default as IconTwitter } from './atoms/icons/icon-twitter'
+export { default as Logo } from './atoms/logo'
+export { default as ShareLink } from './atoms/share-link'
