@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
     "target": "es6",
-    //    "lib": ["ES5", "ES2015", "ES2016", "DOM", "ESNext"],
+    "lib": [
+      "ES5",
+      "ES2015",
+      "ES2016",
+      "DOM",
+      "ESNext"
+    ],
     //    "types": ["node"],
     //    "allowJs": true,
     "skipLibCheck": true,
@@ -14,7 +20,7 @@
     "declaration": true,
     //    "noImplicitAny": false,
     //    "noUnusedLocals": true,
-    "outDir": "dist",
+    "outDir": "build",
     "sourceMap": true,
     "moduleResolution": "node",
     //    "resolveJsonModule": true,
@@ -31,6 +37,8 @@
     "@victorzamudio/icons": [
       "./src/atoms/icons"
     ],
-    "@victorzamudio/icons/*": ["./src/atoms/icons/*"]
+    "@victorzamudio/icons/*": [
+      "./src/atoms/icons/*"
+    ]
   }
 }
