@@ -1,6 +1,6 @@
 {
   "name": "@victorzamudio/react-components-library",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "author": "Victor Zamudio",
   "licence": "MIT",
   "main": "build/cjs/index.js",
