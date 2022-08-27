@@ -30,4 +30,5 @@ export default {
     }),
   ],
   external: Object.keys(pkg.peerDependencies),
+  preserveModules: true,
 };
