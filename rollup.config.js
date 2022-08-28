@@ -4,10 +4,18 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import { terser } from "rollup-plugin-terser";
 import alias from "@rollup/plugin-alias";
+import multi from '@rollup/plugin-multi-entry';
 import pkg from "./package.json";
 
 export default {
-  input: "src/index.ts",
+  // input: "src/index.ts",
+  input: [
+    "src/atoms/logo/index.tsx",
+    "src/atoms/icons/icon-facebook/index.tsx",
+    "src/atoms/icons/icon-linkedln/index.tsx",
+    "src/atoms/icons/icon-twitter/index.tsx",
+    "src/atoms/link/index.tsx",
+  ],
   output: [
     { file: pkg.main, format: "cjs", sourcemap: true },
     { file: pkg.module, format: "esm", sourcemap: true },
@@ -28,6 +36,7 @@ export default {
         { find: "Logo", replacement: "./src/atoms/logo" },
       ],
     }),
+    multi()
   ],
   external: Object.keys(pkg.peerDependencies),
 };
