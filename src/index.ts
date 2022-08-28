@@ -2,12 +2,39 @@ import * as atoms from "./atoms";
 import * as molecules from "./molecules";
 import * as organisms from "./organisms";
 
+const {
+  IconFacebook,
+  IconLinkedLn,
+  IconPinterest,
+  IconTwitter,
+  Link,
+  Logo,
+  ShareLink,
+  TitleSection,
+  TitleSubsection,
+} = atoms;
+
+const { Breadcrumb, ShareContent } = molecules;
+
+const { Footer } = organisms;
+
 const spaceName = "Components";
 
 export default spaceName;
 
 export { atoms, molecules, organisms };
 
-export * as Icons from "./atoms/icons";
-export { default as IconFacebook } from "./atoms/icons/icon-facebook";
-export { default as Logo } from "./atoms/logo";
+export {
+  Breadcrumb,
+  IconFacebook,
+  IconLinkedLn,
+  IconPinterest,
+  IconTwitter,
+  Footer,
+  Link,
+  Logo,
+  ShareLink,
+  ShareContent,
+  TitleSection,
+  TitleSubsection,
+};
