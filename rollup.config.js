@@ -9,8 +9,8 @@ import pkg from "./package.json";
 export default {
   input: "src/index.ts",
   output: [
-    { dir: pkg.main, format: "cjs", sourcemap: true },
-    { dir: pkg.module, format: "esm", sourcemap: true },
+    { file: pkg.main, format: "cjs", sourcemap: true },
+    { file: pkg.module, format: "esm", sourcemap: true },
   ],
   plugins: [
     babel({
@@ -30,5 +30,4 @@ export default {
     }),
   ],
   external: Object.keys(pkg.peerDependencies),
-  preserveModules: true,
 };

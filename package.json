@@ -3,11 +3,14 @@
   "version": "1.2.2",
   "author": "Victor Zamudio",
   "licence": "MIT",
-  "main": "build/cjs/",
-  "module": "build/esm/",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
   "files": [
     "build"
   ],
+  "exports": {
+    "./Logo": "./build/cjs/atoms/logo/index.js"
+  },
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",

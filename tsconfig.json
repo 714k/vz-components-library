@@ -20,11 +20,11 @@
     "declaration": true,
     //    "noImplicitAny": false,
     //    "noUnusedLocals": true,
-    "outDir": "build",
+    "outDir": "./build",
     "sourceMap": true,
     "moduleResolution": "node",
     //    "resolveJsonModule": true,
-    //    "isolatedModules": true,
+    "isolatedModules": true,
     //    "noEmit": true,
     "emitDeclarationOnly": true,
     "jsx": "react-jsx"
