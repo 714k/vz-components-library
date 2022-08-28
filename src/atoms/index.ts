@@ -6,7 +6,6 @@ import {
 } from "./icons";
 import Link from "./link";
 import Logo from "./logo";
-import Loader from "./loader";
 import ShareLink from "./share-link";
 import TitleSection from "./title-section";
 import TitleSubsection from "./title-subsection";
