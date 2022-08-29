@@ -4,9 +4,6 @@
   "author": "Victor Zamudio",
   "licence": "MIT",
   "repository": "https://github.com/714k/vz-components-library.git",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "main": "build/cjs/index.js",
   "module": "build/esm/index.js",
   "files": [
