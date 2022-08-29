@@ -12,21 +12,16 @@ export default {
     className: {
       control: { type: "text" },
     },
-    styles: {
+    sx: {
       control: { type: "object" },
     },
   },
 } as ComponentMeta<typeof Link>;
 
-const Template: ComponentStory<typeof Link> = (args: any) => (
-  <Link {...args}>Text</Link>
+export const Text: ComponentStory<typeof Link> = (args: any) => (
+  <Link {...args} />
 );
-
-export const TextLink: ComponentStory<typeof Link> = (args) => (
-  <Link {...args}>Text</Link>
-);
-
-TextLink.args = Link.defaultProps;
+Text.args = Link.defaultProps;
 
 export const WithIcon: ComponentStory<typeof Link> = (args) => (
   <Link {...args}>

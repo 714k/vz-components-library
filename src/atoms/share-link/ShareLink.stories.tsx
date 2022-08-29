@@ -1,6 +1,7 @@
 import * as React from "react";
-import { ComponentStory, ComponentMeta, Story } from "@storybook/react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 import atomsTitles from "../index";
+import { IconFacebook } from "../icons";
 import ShareLink from "./ShareLink";
 
 export default {
@@ -8,15 +9,17 @@ export default {
   title: `${atomsTitles.sharedLink}`,
 } as ComponentMeta<typeof ShareLink>;
 
-const Template: ComponentStory<typeof ShareLink> = (args: any) => (
-  <ShareLink {...args} />
+export const WithIcon: ComponentStory<typeof ShareLink> = (args: any) => (
+  <ShareLink {...args}>
+    <IconFacebook
+      style={{
+        fill: "white",
+        zIndex: 3,
+        position: "absolute",
+        height: "20px",
+        transform: "translate(8px, 4px)",
+      }}
+    />
+  </ShareLink>
 );
-
-export const Facebook = Template.bind({});
-
-Facebook.args = {
-  href: "#",
-  className: "share-link",
-  text: "Facebook",
-  showBullet: false,
-};
+WithIcon.args = ShareLink.defaultProps;
