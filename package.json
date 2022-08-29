@@ -1,6 +1,6 @@
 {
   "name": "@tlak/react-components-library",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "author": "Victor Zamudio",
   "licence": "MIT",
   "main": "build/cjs/index.js",
