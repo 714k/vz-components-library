@@ -2,16 +2,16 @@ import React from "react";
 
 interface LogoProps {
   className?: string;
-  styles?: object;
+  style?: object;
   testId?: string;
 }
 
-function Logo({ className, styles, testId }: LogoProps) {
+function Logo({ className, style, testId }: LogoProps) {
   return (
     <svg
       data-testid={testId}
       className={className}
-      style={styles}
+      style={style}
       width="40"
       height="30"
       viewBox="0 0 21.167 15.875"
@@ -41,8 +41,8 @@ function Logo({ className, styles, testId }: LogoProps) {
 Logo.displayName = "Logo";
 
 Logo.defaultProps = {
-  className: "main-logo",
-  styles: { width: "50px" },
+  className: "vz atom main-logo small",
+  style: { width: "50px" },
   testId: "main-logo",
 };
 

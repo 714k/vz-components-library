@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ComponentStory, ComponentMeta, Story } from "@storybook/react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 import atomsTitles from "../index";
 import TitleSubsection from "./TitleSubsection";
 
@@ -8,10 +8,8 @@ export default {
   title: `${atomsTitles.titleSubsection}`,
 } as ComponentMeta<typeof TitleSubsection>;
 
-const Template: ComponentStory<typeof TitleSubsection> = (args: any) => (
+export const AtFirst: ComponentStory<typeof TitleSubsection> = (args: any) => (
   <TitleSubsection {...args} />
 );
 
-export const Primary = Template.bind({});
-
-Primary.args = TitleSubsection.defaultProps;
+AtFirst.args = TitleSubsection.defaultProps;
