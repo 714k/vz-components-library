@@ -21,8 +21,25 @@ const Template: ComponentStory<typeof IconFacebook> = (args: any) => (
   <IconFacebook {...args} />
 );
 
-export const Small: ComponentStory<typeof IconFacebook> = (args) => (
-  <IconFacebook {...args} />
-);
-
+export const Small = Template.bind({});
 Small.args = IconFacebook.defaultProps;
+
+export const Medium = Template.bind({});
+Medium.args = {
+  ...IconFacebook.defaultProps,
+  className: "icon facebook medium",
+  style: {
+    width: "32px",
+    height: "auto",
+  },
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  ...IconFacebook.defaultProps,
+  className: "icon facebook large",
+  style: {
+    width: "64px",
+    height: "auto",
+  },
+};

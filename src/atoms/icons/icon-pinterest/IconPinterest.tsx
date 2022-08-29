@@ -10,7 +10,7 @@ function IconPinterest({ className, style, testId }: IconType) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
     >
-      <path d="m459 152 1 13A297 297 0 0 1 0 417a217 217 0 0 0 156-44c-47-1-85-31-98-72l19 1c10 0 19-1 28-3-48-10-84-52-84-103v-2c14 8 30 13 47 14A105 105 0 0 1 36 67c51 64 129 106 216 110-2-8-2-16-2-24a105 105 0 0 1 181-72c24-4 47-13 67-25-8 24-25 45-46 58 21-3 41-8 60-17-14 21-32 40-53 55z" />
+      <path d="M204 7C101 7 0 75 0 186c0 70 40 110 64 110 10 0 15-28 15-35 0-10-23-29-23-68 0-81 61-138 140-138 68 0 118 39 118 110 0 53-21 153-90 153-25 0-46-18-46-44 0-38 26-74 26-113 0-67-94-55-94 25 0 17 2 36 10 51-14 60-42 148-42 209 0 19 3 38 4 57 4 3 2 3 7 1 51-69 49-82 72-173 12 24 44 36 69 36 106 0 154-103 154-196C384 71 298 7 204 7z" />
     </svg>
   );
 }
@@ -18,9 +18,9 @@ function IconPinterest({ className, style, testId }: IconType) {
 IconPinterest.displayName = "IconPinterest";
 
 IconPinterest.defaultProps = {
-  className: "icon pinterest",
+  className: "icon pinterest small",
   style: {
-    width: "24px",
+    width: "16px",
     height: "auto",
   },
   testId: "icon-pinterest",

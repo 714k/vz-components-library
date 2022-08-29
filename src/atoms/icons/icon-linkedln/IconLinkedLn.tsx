@@ -26,7 +26,7 @@ function IconLinkedLn({ className, style, testId }: IconType) {
 IconLinkedLn.displayName = "IconLinkedLn";
 
 IconLinkedLn.defaultProps = {
-  className: "icon linkedln",
+  className: "icon linkedln small",
   style: {
     width: "24px",
     height: "auto",
