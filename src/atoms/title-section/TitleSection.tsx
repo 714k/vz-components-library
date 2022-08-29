@@ -7,4 +7,9 @@ function TitleSection({ className, text }: TitleSectionType) {
 
 TitleSection.displayName = "TitleSection";
 
+TitleSection.defaultProps = {
+  className: "vz-atoms title-section",
+  text: "At first...",
+};
+
 export default TitleSection;

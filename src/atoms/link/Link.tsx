@@ -30,10 +30,11 @@ function Link({
 Link.displayName = "Link";
 
 Link.defaultProps = {
-  className: "vz-atom-link",
+  children: 'Text Link',
+  className: "vz-atom-link-text",
   component: "a",
   href: "#",
-  sx: { width: "50px" },
+  sx: { color: '#ff3b00' },
   testId: "vz-atom-link",
   title: "Text link",
   typographyVariant: "body1",

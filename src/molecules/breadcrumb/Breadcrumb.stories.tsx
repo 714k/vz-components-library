@@ -3,7 +3,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import HomeIcon from "@mui/icons-material/Home";
-import WhatshotIcon from "@mui/icons-material/Whatshot";
+import WhatShotIcon from "@mui/icons-material/Whatshot";
 import GrainIcon from "@mui/icons-material/Grain";
 
 import moleculesTitles from "../index";
@@ -18,22 +18,15 @@ const Template: ComponentStory<typeof Breadcrumb> = (args: any) => (
   <Breadcrumb {...args} />
 );
 
-export const Basic: ComponentStory<typeof Breadcrumb> = (args) => (
-  <Breadcrumb {...args} />
-);
-
+export const Basic = Template.bind({});
 Basic.args = Breadcrumb.defaultProps;
 
 export const Expandable: ComponentStory<typeof Breadcrumb> = (args) => (
-  <Breadcrumb {...args} maxItems={2} />
+  <Breadcrumb {...args} maxItems={1} />
 );
-
 Expandable.args = Breadcrumb.defaultProps;
 
-export const WithIcons: ComponentStory<typeof Breadcrumb> = (args) => (
-  <Breadcrumb {...args} />
-);
-
+export const WithIcons = Template.bind({});
 WithIcons.args = {
   breadcrumbs: [
     <Link
@@ -55,7 +48,7 @@ WithIcons.args = {
       onClick={() => console.info("level 1")}
       sx={{ display: "flex", alignItems: "center" }}
     >
-      <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+      <WhatShotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
       Level 1
     </Link>,
     <Link
