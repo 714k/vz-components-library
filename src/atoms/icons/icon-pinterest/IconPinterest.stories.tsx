@@ -6,7 +6,7 @@ import IconPinterest from "./IconPinterest";
 
 export default {
   component: IconPinterest,
-  title: `${atomsTitles.iconLinkedLn}`,
+  title: `${atomsTitles.iconPinterest}`,
   argTypes: {
     className: {
       control: { type: "text" },
@@ -21,34 +21,25 @@ const Template: ComponentStory<typeof IconPinterest> = (args: any) => (
   <IconPinterest {...args} />
 );
 
-export const Small: ComponentStory<typeof IconPinterest> = (args) => (
-  <IconPinterest {...args} />
-);
-
+export const Small = Template.bind({});
 Small.args = IconPinterest.defaultProps;
 
-export const Medium: ComponentStory<typeof IconPinterest> = (args) => (
-  <IconPinterest {...args} />
-);
-
+export const Medium = Template.bind({});
 Medium.args = {
-  className: "medium",
+  ...IconPinterest.defaultProps,
+  className: "icon pinterest medium",
   style: {
-    width: "80px",
+    width: "32px",
     height: "auto",
   },
-  testId: "main-IconPinterest",
 };
 
-export const Large: ComponentStory<typeof IconPinterest> = (args) => (
-  <IconPinterest {...args} />
-);
-
+export const Large = Template.bind({});
 Large.args = {
-  className: "large",
+  ...IconPinterest.defaultProps,
+  className: "icon pinterest large",
   style: {
-    width: "120px",
+    width: "64px",
     height: "auto",
   },
-  testId: "main-IconPinterest",
 };

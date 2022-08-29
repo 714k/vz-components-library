@@ -18,12 +18,12 @@ function IconTwitter({ className, style, testId }: IconType) {
 IconTwitter.displayName = "IconTwitter";
 
 IconTwitter.defaultProps = {
-  className: "icon facebook",
+  className: "icon twitter small",
   style: {
-    width: "24px",
+    width: "16px",
     height: "auto",
   },
-  testId: "icon-facebook",
+  testId: "icon-twitter",
 };
 
 export default IconTwitter;

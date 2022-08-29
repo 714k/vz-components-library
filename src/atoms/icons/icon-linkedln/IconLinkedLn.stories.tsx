@@ -21,34 +21,25 @@ const Template: ComponentStory<typeof IconLinkedLn> = (args: any) => (
   <IconLinkedLn {...args} />
 );
 
-export const Small: ComponentStory<typeof IconLinkedLn> = (args) => (
-  <IconLinkedLn {...args} />
-);
-
+export const Small = Template.bind({});
 Small.args = IconLinkedLn.defaultProps;
 
-export const Medium: ComponentStory<typeof IconLinkedLn> = (args) => (
-  <IconLinkedLn {...args} />
-);
-
+export const Medium = Template.bind({});
 Medium.args = {
-  className: "medium",
+  ...IconLinkedLn.defaultProps,
+  className: "icon linkedln medium",
   style: {
-    width: "80px",
+    width: "32px",
     height: "auto",
   },
-  testId: "main-IconLinkedLn",
 };
 
-export const Large: ComponentStory<typeof IconLinkedLn> = (args) => (
-  <IconLinkedLn {...args} />
-);
-
+export const Large = Template.bind({});
 Large.args = {
-  className: "large",
+  ...IconLinkedLn.defaultProps,
+  className: "icon linkedln large",
   style: {
-    width: "120px",
+    width: "64px",
     height: "auto",
   },
-  testId: "main-IconLinkedLn",
 };

@@ -18,7 +18,7 @@ function IconFacebook({ className, style, testId }: IconType) {
 IconFacebook.displayName = "IconFacebook";
 
 IconFacebook.defaultProps = {
-  className: "icon facebook",
+  className: "icon facebook small",
   style: {
     width: "16px",
     height: "auto",
