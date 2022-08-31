@@ -4,15 +4,15 @@ import { Logo } from "../../atoms";
 
 type HeaderProps = {
   className?: string;
-  style?: object;
+  sx?: object;
   testId: string;
 };
 
-function Header({ className, style, testId }) {
+function Header({ className, sx, testId }: HeaderProps) {
   return (
     <Box
-      className={className}
-      style={style}
+      className={`branding ${className}`}
+      sx={sx}
       role="banner"
       id="header"
       data-testid={testId}
@@ -39,6 +39,6 @@ Header.defaultProps = {
   testId: "mainHeader",
 };
 
-Header.displayName = "Header";
+Header.displayName = "MainHeader";
 
 export default Header;
