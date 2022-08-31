@@ -3,18 +3,24 @@ import Breadcrumbs, { BreadcrumbsProps } from "@mui/material/Breadcrumbs";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 
-
 function handleClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
   event.preventDefault();
   console.info("You clicked a breadcrumb.");
 }
-type BreadcrumbType = {
-  breadcrumbs: any
-} & BreadcrumbsProps
 
-function Breadcrumb({ breadcrumbs, maxItems }: BreadcrumbType) {
+type BreadcrumbType = {
+  breadcrumbs: any;
+  maxItems?: number;
+  separator?: string;
+} & BreadcrumbsProps;
+
+function Breadcrumb({ breadcrumbs, maxItems, separator }: BreadcrumbType) {
   return (
-    <Breadcrumbs maxItems={maxItems} separator="›" aria-label="breadcrumb">
+    <Breadcrumbs
+      maxItems={maxItems}
+      separator={separator}
+      aria-label="breadcrumb"
+    >
       {breadcrumbs}
     </Breadcrumbs>
   );
@@ -55,6 +61,7 @@ Breadcrumb.defaultProps = {
       Current Level
     </Typography>,
   ],
+  separator: ">",
 };
 
 export default Breadcrumb;

@@ -19,7 +19,7 @@ function Link({
       sx={sx}
       href={href}
       variant={typographyVariant}
-      data-testId={testId}
+      data-testid={testId}
       title={title}
     >
       {children}
@@ -30,11 +30,11 @@ function Link({
 Link.displayName = "Link";
 
 Link.defaultProps = {
-  children: 'Text Link',
+  children: "Text Link",
   className: "vz-atom-link-text",
   component: "a",
   href: "#",
-  sx: { color: '#ff3b00' },
+  sx: { color: "#ff3b00" },
   testId: "vz-atom-link",
   title: "Text link",
   typographyVariant: "body1",

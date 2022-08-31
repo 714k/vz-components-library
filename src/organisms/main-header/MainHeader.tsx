@@ -2,13 +2,13 @@ import React from "react";
 import Box from "@mui/material/Box";
 import { Logo } from "../../atoms";
 
-type HeaderProps = {
+type MainHeaderProps = {
   className?: string;
   sx?: object;
   testId: string;
 };
 
-function Header({ className, sx, testId }: HeaderProps) {
+function MainHeader({ className, sx, testId }: MainHeaderProps) {
   return (
     <Box
       className={`branding ${className}`}
@@ -22,7 +22,7 @@ function Header({ className, sx, testId }: HeaderProps) {
       <p className="vz jump">
         Jump to{" "}
         <a
-          href="#mainContent"
+          href="src/organisms/main-header/MainHeader.tsx"
           id="mainContentLink"
           title="Main Content"
           target="self"
@@ -34,11 +34,11 @@ function Header({ className, sx, testId }: HeaderProps) {
   );
 }
 
-Header.defaultProps = {
+MainHeader.defaultProps = {
   className: "vz molecule mainHeader",
   testId: "mainHeader",
 };
 
-Header.displayName = "MainHeader";
+MainHeader.displayName = "MainHeader";
 
-export default Header;
+export default MainHeader;
