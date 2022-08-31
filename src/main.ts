@@ -9,21 +9,25 @@ import Link from "./atoms/link";
 import Loader from "./atoms/loader";
 import Logo from "./atoms/logo";
 import ShareLink from "./atoms/share-link";
-import titleSection from "./atoms/title-section";
-import titleSubSection from "./atoms/title-subsection";
+import TitleSection from "./atoms/title-section";
+import TitleSubSection from "./atoms/title-subsection";
 
 /* Molecules */
 import Breadcrumb from "./molecules/breadcrumb";
+import SectionLinks from "./molecules/section-links";
 import ShareContent from "./molecules/share-content";
 
 /* Organisms */
 import Footer from "./organisms/footer";
+import Header from "./organisms/main-header";
+import SectionHeader from "./organisms/section-header";
 
 /* Templates */
 
 /* Pages */
 export {
   Breadcrumb,
+  Header,
   IconPinterest,
   IconTwitter,
   IconFacebook,
@@ -32,8 +36,10 @@ export {
   Link,
   Loader,
   Logo,
+  SectionHeader,
+  SectionLinks,
   ShareLink,
   ShareContent,
-  titleSection,
-  titleSubSection,
+  TitleSection,
+  TitleSubSection,
 };

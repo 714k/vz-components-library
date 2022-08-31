@@ -1,13 +1,13 @@
 import React from "react";
-import { SHARE_LINKS } from "./constants";
 
 type ShareToolsType = {
   children: React.ReactNode;
+  id: string;
 };
 
-function ShareContent({ children }: ShareToolsType) {
+function ShareContent({ children, id }: ShareToolsType) {
   return (
-    <p id="shareTools" data-testid="shareTools">
+    <p id={id} data-testid={id}>
       {children}
     </p>
   );
@@ -15,6 +15,8 @@ function ShareContent({ children }: ShareToolsType) {
 
 ShareContent.displayName = "ShareContent";
 
-ShareContent.defaultProps = {};
+ShareContent.defaultProps = {
+  id: "shareContent",
+};
 
 export default ShareContent;

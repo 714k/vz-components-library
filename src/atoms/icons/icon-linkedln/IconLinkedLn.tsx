@@ -14,7 +14,7 @@ function IconLinkedLn({ className, style, testId }: IconType) {
     <svg
       className={className}
       style={style}
-      data-testId={testId}
+      data-testid={testId}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
     >
